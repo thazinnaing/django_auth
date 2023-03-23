@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{%block t%}Signin{%endblock%}
+{% block c %}
+    <form action="" method = 'post'>
+    {% csrf_token %}
+
+        <label for = "name">name</label>
+        <input type="text" id = 'name' placeholder = 'username' name = 'name' required><br>
+        
+        <label for = "pass">password</label>
+        <input type="text" id = 'pass' placeholder = 'password' name = 'password' required><br>
+        
+        <label for = "email">email</label>
+        <input type="email" id = 'email' placeholder = 'email' pattern = '.+@gmail.com' name = 'email' required><br>
+        
+
+        <input type = 'submit' value = 'submit'>
+
+    </form>
+
+{%endblock%}
