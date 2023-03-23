@@ -2,20 +2,22 @@
 {%block t%}Signin{%endblock%}
 {% block c %}
 
-    <form action="" method='post'>
-    {% csrf_token %}
-
-        <label for = "email">email</label>
-        <input type="email" id = 'email' placeholder = 'email' pattern = '.+@gmail.com' name = 'email' required><br>
-
-        <label for = "pass">password</label>
-        <input type="text" id = 'pass' placeholder = 'password' name = 'password' required><br>
+    <div>
+        <form action="" method='post'>
+            {% csrf_token %}
         
-        <input type = 'submit' value = 'login'>
-
-    </form>
-    <form action="signin/" method = "get">
-        <input type = 'submit' value = 'signin'>
-    </form>
+                <label for = "email">email</label>
+                <input type="email" id = 'email' placeholder = 'email' pattern = '.+@gmail.com' name = 'email' required><br>
+        
+                <label for = "pass">password</label>
+                <input type="text" id = 'pass' placeholder = 'password' name = 'password' required><br>
+                
+                <input type = 'submit' value = 'login'>
+        
+            </form>
+    </div>
+    <div>
+        <a href="signin/">sign up</a>
+   </div>
 
 {%endblock%}

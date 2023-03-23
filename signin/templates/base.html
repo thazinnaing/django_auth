@@ -5,9 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block t %}{% endblock %}</title>
+    <style>
+        .block {
+            background-color: pink;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        label {
+            display: block;
+        }
+     
+    </style>
 </head>
 <body>
-    <div>
+    <div class="block">
         {% block c%}
 
         {%endblock%}
