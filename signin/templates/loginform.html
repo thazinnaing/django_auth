@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{%block t%}Signin{%endblock%}
+{%block t%}Sign In{%endblock%}
 {% block c %}
 
     <div>
@@ -12,12 +12,12 @@
                 <label for = "pass">password</label>
                 <input type="text" id = 'pass' placeholder = 'password' name = 'password' required><br>
                 
-                <input type = 'submit' value = 'login'>
+                <button type = 'submit'>login</button>
         
             </form>
     </div>
     <div>
-        <a href="signin/">sign up</a>
+        <a href="signup/">sign up</a>
    </div>
 
 {%endblock%}

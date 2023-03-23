@@ -14,14 +14,14 @@ def signup(request):
         for x in range(len(alldata)):
             getdata = signin.objects.values()[x]['email']
             if email == getdata:
-                return render(request, 'signinform.html')
+                return render(request, 'signupform.html')
         
         data.save()
         res = redirect('/auth')
         return res
         
     else:
-        return render(request, 'signinform.html')
+        return render(request, 'signupform.html')
     
 def login(request):
     

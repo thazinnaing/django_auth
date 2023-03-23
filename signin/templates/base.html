@@ -6,8 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block t %}{% endblock %}</title>
     <style>
+
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        button {
+            padding:  5px;
+            margin-top: 3px;
+            background-color: #FEE0C0;
+            color: #FF7C7C;
+            border: none;
+            border-radius: 5px;
+        }
+
         .block {
-            background-color: pink;
+            background-color: maroon;
             height: 100vh;
             display: flex;
             flex-direction: column;
@@ -17,6 +32,24 @@
 
         label {
             display: block;
+            color: #FEE0C0;
+        }
+
+        input {
+            margin: 5px 0px;
+            border: none;
+            padding: 5px;
+            color: #FF7C7C;
+            border-radius: 5px;
+        }
+
+        a {
+            color: lightblue;
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #FEE0C0;
         }
      
     </style>

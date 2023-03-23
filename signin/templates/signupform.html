@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{%block t%}Signin{%endblock%}
+{%block t%}Sign Up{%endblock%}
 {% block c %}
     <form action="" method = 'post'>
     {% csrf_token %}
@@ -14,7 +14,7 @@
         <input type="email" id = 'email' placeholder = 'email' pattern = '.+@gmail.com' name = 'email' required><br>
         
 
-        <input type = 'submit' value = 'signup'>
+        <button type="submit">sign up</button>
 
     </form>
 
